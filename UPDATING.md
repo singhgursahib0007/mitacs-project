@@ -45,7 +45,7 @@ git commit -m "Status: week N update"
 git push
 ```
 
-The remote is `git@github.com:singhgursahib0007/mitacs-project.git`, and the live page is served by GitHub Pages from the `main` branch root. It refreshes about a minute after each push. Neil and Kevin keep the same link.
+The remote is `https://github.com/singhgursahib0007/mitacs-project.git`, pushed over HTTPS with the `gh` login for singhgursahib0007 (the Mac's default SSH key belongs to a different account and is refused). The the live page is served by GitHub Pages from the `main` branch root. It refreshes about a minute after each push. Neil and Kevin keep the same link.
 
 ## Files
 
