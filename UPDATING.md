@@ -4,15 +4,15 @@ This is for Gursahib and for coding agents. When Gursahib says "update the HTML"
 
 ## The rule: edit `status.js`, not `index.html`
 
-`index.html` is the fixed 16-week plan. `status.js` holds everything that changes: the dates, the current week, the week badges, the milestones, the "Current work" lists, what I need from Neil, and the update history. The page redraws itself from `status.js`.
+`index.html` is the page design plus the fixed 16-week plan (the `STAGES` and `WEEKS` arrays near the bottom of the file). `status.js` holds everything that changes: the dates, the current week, the week badges, the milestones, the "Current work" lists, what I need from Neil, and the update history. The page redraws itself from `status.js`.
 
-Only edit `index.html` when the **plan itself** changes, for example when a week's content is rescoped. Then also log the change in the knowledge base (`../IT53891-knowledge-base/logs/decision-log.md`).
+Only edit `index.html` when the **plan itself** changes, for example when a week's content is rescoped. Then edit that week's entry in the `WEEKS` array, not the HTML markup. Then also log the change in the knowledge base (`../IT53891-knowledge-base/logs/decision-log.md`).
 
 ## Routine update checklist
 
 1. `lastUpdated`: set to today (YYYY-MM-DD).
 2. `currentWeek`: the week now being worked on (1–16; use 17 when finished).
-3. `weeks`: mark finished weeks `"done"` and the current week `"in-progress"`. Use `"delayed"` for a week running late. Weeks not listed show as upcoming. On phones and tablets, week cards are collapsed by default; the current week and any in-progress or delayed weeks open automatically.
+3. `weeks`: mark finished weeks `"done"` and the current week `"in-progress"`. Use `"delayed"` for a week running late. Weeks not listed show as upcoming. Week cards are collapsed by default; the current week and any in-progress or delayed weeks open automatically. Done weeks show in solid colour on the timeline bar, and upcoming weeks are faded.
 4. `milestones`: when one is reached, set `status: "done"` and `date`. Add a short `note` if useful.
 5. `done` / `now` / `next`: 2–5 short bullets each. Move finished items from `now` to `done`, and drop old `done` items once they are more than about two weeks old.
 6. `needs`: what is waiting on Neil or Kevin (`who: "Neil"` / `"Kevin"`). Remove items once they are received. An empty list hides the box.
@@ -51,7 +51,7 @@ The remote is `git@github.com:singhgursahib0007/mitacs-project.git`, and the liv
 
 | File | Purpose |
 |---|---|
-| `index.html` | The plan page (static content and rendering script) |
+| `index.html` | Page design (light theme, maroon accent `#800020`) plus the plan content in the `STAGES` / `WEEKS` arrays |
 | `status.js` | All changing data. **Edit this** |
 | `UPDATING.md` | This guide |
 | `README.md` | What the repository is |
