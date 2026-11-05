@@ -12,7 +12,7 @@ Only edit `index.html` when the **plan itself** changes, for example when a week
 
 1. `lastUpdated`: set to today (YYYY-MM-DD).
 2. `currentWeek`: the week now being worked on (1–16; use 17 when finished).
-3. `weeks`: mark finished weeks `"done"` and the current week `"in-progress"`. Use `"delayed"` for a week running late. Weeks not listed show as upcoming.
+3. `weeks`: mark finished weeks `"done"` and the current week `"in-progress"`. Use `"delayed"` for a week running late. Weeks not listed show as upcoming. On phones and tablets, week cards are collapsed by default; the current week and any in-progress or delayed weeks open automatically.
 4. `milestones`: when one is reached, set `status: "done"` and `date`. Add a short `note` if useful.
 5. `done` / `now` / `next`: 2–5 short bullets each. Move finished items from `now` to `done`, and drop old `done` items once they are more than about two weeks old.
 6. `needs`: what is waiting on Neil or Kevin (`who: "Neil"` / `"Kevin"`). Remove items once they are received. An empty list hides the box.
